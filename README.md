@@ -1,2 +1,3 @@
-# Cold-Cap
-Landing page describing the beautiful sites that can be seen near the north pole.
+# 66° Nord
+Re-creating a beautiful site I found on awwards.com
+Lots of animations and dom manipulation 
