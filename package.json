@@ -1,0 +1,23 @@
+{
+  "name": "cold-cap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CiaranOriordan93/Cold-Cap.git"
+  },
+  "author": "Ciaran Oriordan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CiaranOriordan93/Cold-Cap/issues"
+  },
+  "homepage": "https://github.com/CiaranOriordan93/Cold-Cap#readme",
+  "dependencies": {},
+  "devDependencies": {}
+}
