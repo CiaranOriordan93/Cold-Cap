@@ -37,7 +37,7 @@ header {
 }
 
 .wrapper {
-    width: 120rem;
+    width: 75vw;
     height: auto;
     margin: 0 auto;
 }
@@ -207,7 +207,7 @@ main {
     position: absolute;
     top: 58%;
     left: 55%;
-    transform: translate(-39%, -24%);
+    transform: translate(-50%, -24%);
     width: 130rem;
     height: 40rem;
 }
@@ -403,12 +403,6 @@ section {
     font-size: 1.2rem;
 }
 
-.world-map-section {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20rem;
-    margin-top: -35rem;
-}
 
 .world-map-bg-image {
     position: relative;
@@ -421,15 +415,26 @@ section {
     height: 100%;
 }
 
+.world-map-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 20rem;
+    margin-top: -35rem;
+}
 
 .world-map {
     margin-right: 10rem;
 }
 
+.world-map img {
+    width: 100%;
+}
+
 .base-camps {
     margin-top: 10rem;
     color: #000;
-    width: 50rem;
+    width: 40rem;
 }
 
 .base-camps h3 {
@@ -454,12 +459,12 @@ cite {
 
 .our-favorites {
     position: relative;
-    background-image: url(../img/horse-island.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/horse-island.jpg);
     background-size: cover;
     background-position: center;
     height: 70rem;
     width: 100%;
-    margin-bottom: 30rem;
+    margin-bottom: 15rem;
 }
 
 .favorite-heading {
@@ -533,6 +538,7 @@ cite {
 
 .paralax-wrapper {
     position: relative;
+    width: 100%;
 }
 
 .mountain-view {
@@ -618,7 +624,7 @@ cite {
 
 footer {
     position: relative;
-    margin-top: 58rem;
+    margin-top: 50rem;
 }
 
 .about {
@@ -677,14 +683,21 @@ footer {
     padding: 2px;
 }
 
-.footer-links a {
+.footer-links a:link,
+.footer-links a:visited {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.7);
 }
 
+.footer-links a:hover,
+.footer-links a:active {
+    color: #96daf0;
+    transition: 0.3s;
+}
+
 .list-1,
 .list-2 {
-    margin-right: 35rem;
+    margin-right: 25rem;
 }
 
 .top-layer {
@@ -739,6 +752,17 @@ footer {
     list-style: none;
     display: inline-block;
     margin-top: 1rem;
+}
+
+.bottom-layer a:link,
+.bottom-layer a:visited {
+    text-decoration: none;
+    color: #96daf0;
+}
+
+.bottom-layer a:hover,
+.bottom-layer a:active {
+    color: #96daf0;
 }
 
 .bottom-layer li img {
@@ -832,12 +856,19 @@ input[type=submit] {
     padding: 1rem;
 }
 
-.legal-links a {
+.legal-links a:link,
+.legal-links a:visited {
     text-decoration: none;
     color: #fff;
     font-size: 1.2rem;
 }
 
+
+.legal-links a:hover,
+.legal-links a:active {
+    color: #96daf0;
+    transition: .3s;
+}
 @keyframes moveInRight {
     0% {
         opacity: 0;

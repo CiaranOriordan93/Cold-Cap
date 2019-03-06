@@ -1,0 +1,83 @@
+@media only screen and (max-width: 1200px) {
+    .wrapper {
+        width: 90vw;
+    }
+
+    .arrow-nav {
+        width: 30rem;
+    }
+
+    .arrow-nav li {
+        margin-left: 10rem;
+    }
+
+    .counter {
+        left: 12%;
+    }
+
+    .location-gallery-wrapper {
+        transform: translate(-30%, -24%);
+    }
+
+    .world-map-section {
+        margin-top: -20rem;
+    }
+
+    .favorite-info-wrapper {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .wrapper {
+        width: 90vw;
+    }
+
+    .links li:not(:last-child) {
+        padding-right: 2rem;
+    }
+
+    .location-gallery-wrapper {
+        transform: translate(-23%, -24%);
+    }
+
+    .world-map {
+        margin-right: 6rem;
+    }
+
+    .base-camps {
+        width: 30rem;
+    }
+
+    .favorite-info-wrapper {
+        width: 70%;
+        margin-top: 14rem;
+    }
+
+    .para-1,
+    .para-2,
+    .para-3 {
+        width: 30rem;
+    }
+
+    .list-1,
+    .list-2 {
+        margin-right: 18rem;
+    }
+
+    .sign-up-field {
+        margin-left: 10rem;
+    }
+
+    footer {
+        margin-top: 30rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+    
+}
