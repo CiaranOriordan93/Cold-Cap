@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+.hide {
+    display: none;
+}
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -37,7 +41,7 @@ header {
 }
 
 .wrapper {
-    width: 75vw;
+    width: 80vw;
     height: auto;
     margin: 0 auto;
 }
@@ -80,7 +84,6 @@ nav a:active {
     color: #fff;
     transition: color .3s;
 }
-
 
 .logo-box {
    display: flex;

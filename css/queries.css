@@ -3,6 +3,10 @@
         width: 90vw;
     }
 
+    .links li:not(:last-child) {
+        padding-right: 2rem;
+    }
+
     .arrow-nav {
         width: 30rem;
     }
@@ -75,7 +79,104 @@
 }
 
 @media only screen and (max-width: 1000px) {
+    .contact ul {
+        display: none;
+    }
 
+    .logo-box {
+        display: none;
+    }
+
+    .wrapper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .mobile-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 6rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .mobile-logo {
+        font-size: 3rem;
+        margin-left: 1rem;
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        padding-right: 1rem;
+    }
+
+    .mobile-contact,
+    .mobile-nav-icon {
+        width: 5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+    }
+
+    .mobile-contact {
+        margin-right: -46rem;
+        border-left: 1px solid rgba(255, 255, 255, 0.2);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .mobile-contact img {
+        height: 3rem;
+        margin-top: 1.3rem;
+    }
+
+    .nav-icon {
+        position: relative;
+        margin-top: 2.8rem;
+    }
+
+    .nav-icon,
+    .nav-icon::before,
+    .nav-icon::after {
+        width: 3rem;
+        height: 2px;
+        background-color: #fff;
+        display: inline-block;
+    }
+
+    .nav-icon::before,
+    .nav-icon::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: all .2s;
+    }
+
+    .nav-icon::before { top: -.8rem; }
+    .nav-icon::after { top: .8rem; }
+}
+
+.navigation-checkbox {
+    display: none;
+}
+
+.navigation-button {
+    position: absolute;
+    height: 5rem;
+    width: 5rem;
+    top: .5rem;
+    right: .5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navigation-button:hover span::before {
+    top: -1rem;
+}
+
+.navigation-button:hover span::after {
+    top: 1rem;
+}
+
+.navigation-checkbox:checked span {
+    background-color: transparent;
 }
 
 @media only screen and (max-width: 480px) {
