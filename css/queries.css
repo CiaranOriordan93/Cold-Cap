@@ -7,29 +7,17 @@
         padding-right: 2rem;
     }
 
-    .arrow-nav {
-        width: 30rem;
-    }
-
-    .arrow-nav li {
-        margin-left: 10rem;
-    }
-
-    .counter {
-        left: 12%;
-    }
-
-    .location-gallery-wrapper {
-        transform: translate(-30%, -24%);
-    }
-
     .world-map-section {
         margin-top: -20rem;
     }
 
-    .favorite-info-wrapper {
-        width: 60%;
+    .world-map-section {
+        flex-direction: column;
     }
+
+   .world-map {
+       margin-right: 0rem;
+   } 
 }
 
 @media only screen and (max-width: 1023px) {
@@ -39,34 +27,6 @@
 
     .links li:not(:last-child) {
         padding-right: 2rem;
-    }
-
-    .location-gallery-wrapper {
-        transform: translate(-23%, -24%);
-    }
-
-    .world-map {
-        margin-right: 6rem;
-    }
-
-    .base-camps {
-        width: 30rem;
-    }
-
-    .favorite-info-wrapper {
-        width: 70%;
-        margin-top: 14rem;
-    }
-
-    .para-1,
-    .para-2,
-    .para-3 {
-        width: 30rem;
-    }
-
-    .list-1,
-    .list-2 {
-        margin-right: 18rem;
     }
 
     .sign-up-field {
@@ -95,16 +55,15 @@
     .mobile-nav {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         width: 100%;
-        height: 6rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        height: 8rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     }
 
     .mobile-logo {
-        font-size: 3rem;
+        font-size: 4rem;
         margin-left: 1rem;
-        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-right: 1px solid rgba(255, 255, 255, 0.4);
         padding-right: 1rem;
     }
 
@@ -117,19 +76,21 @@
     }
 
     .mobile-contact {
-        margin-right: -46rem;
-        border-left: 1px solid rgba(255, 255, 255, 0.2);
-        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        position: absolute;
+        right: 7rem;
+        padding-bottom: 1.1rem;
+        border-left: 1px solid rgba(255, 255, 255, 0.4);
+        border-right: 1px solid rgba(255, 255, 255, 0.4);
     }
     
     .mobile-contact img {
-        height: 3rem;
+        height: 5rem;
         margin-top: 1.3rem;
     }
 
     .nav-icon {
         position: relative;
-        margin-top: 2.8rem;
+        margin-top: 3.8rem;
     }
 
     .nav-icon,
@@ -167,17 +128,28 @@
     cursor: pointer;
 }
 
-.navigation-button:hover span::before {
+.navigation-button:hover .nav-icon::before {
     top: -1rem;
 }
-
-.navigation-button:hover span::after {
+.navigation-button:hover .nav-icon::after {
     top: 1rem;
 }
 
-.navigation-checkbox:checked span {
+input[type=checkbox]:checked + label .nav-icon {
     background-color: transparent;
 }
+
+input[type=checkbox]:checked + label .nav-icon::before {
+    top: 0;
+    transform: rotate(135deg);
+}
+
+input[type=checkbox]:checked + label .nav-icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+}
+
+
 
 @media only screen and (max-width: 480px) {
     
