@@ -8,10 +8,6 @@
     box-sizing: border-box;
 }
 
-.hide {
-    display: none;
-}
-
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -41,7 +37,7 @@ header {
 }
 
 .wrapper {
-    width: 80vw;
+    width: 120rem;
     height: auto;
     margin: 0 auto;
 }
@@ -84,6 +80,7 @@ nav a:active {
     color: #fff;
     transition: color .3s;
 }
+
 
 .logo-box {
    display: flex;
@@ -162,11 +159,10 @@ nav a:active {
 .arrow-nav {
     background-color: #242a3a;
     height: 55rem;
-    max-width: 35%;
+    width: 60rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
 .arrow-nav img {
@@ -177,13 +173,17 @@ nav a:active {
 }
 
 .arrow-nav li {
-    margin-bottom: 3rem;
+    margin-left: 20rem;
+    margin-bottom: 2rem;
     list-style: none;  
 }
 
 .counter {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    position: absolute;
+    top: 80%;
+    left: 18%;
+    padding-left: 1rem;
+    padding-right: 1rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -201,66 +201,15 @@ nav a:active {
 main {
     position: relative;
     overflow: hidden;
-    width: 100%;
 }
 
 .location-gallery-wrapper {
     position: absolute;
     top: 58%;
     left: 55%;
-    transform: translate(-43%, -24%);
-    width: 70vw;
+    transform: translate(-39%, -24%);
+    width: 130rem;
     height: 40rem;
-}
-
-.card a {
-    background-color: #242a3a;
-}
-
-.card a:link,
-.card a:visited {
-    text-decoration: none;
-    color: inherit;
-}
-
-.card a:hover .card-image img,
-.card a:active .card-image img {
-    transform: scale(1.02);
-}
-
-.card a:hover .hover-effect {
-    height: 2.5rem;
-    background-color: #96daf0;
-    transform: translateY(10px);
-}
-
-.card a:hover .hover-effect span {
-    transform: translateY(0px);
-}
-
-.hover-effect {
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    text-align: center;
-    height: 1rem;
-    width: 32rem;
-    background-color: #242a3a;
-    color: #fff;
-    overflow: hidden;
-    transform: translateY(10px);
-    transition: all 0.5s;
-}
-
-.hover-effect span {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transform: translateY(80px);
-    transition: all .5s;
 }
 
 .card {
@@ -272,20 +221,18 @@ main {
     color: #000; 
     box-shadow: -1px 4px 74px -16px rgba(0,0,0,.15);
     margin-right: 5rem;
+
 }
 
 .card-image {
     width: 100%;
     height: 18rem;
-    overflow: hidden;
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem;
 }
 
 .card-image img {
     background-size: cover;
     background-position: center;
-    transform: scale(1.15);
-    transition: all .5s;
 }
 
 .card h4 {
@@ -456,6 +403,12 @@ section {
     font-size: 1.2rem;
 }
 
+.world-map-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20rem;
+    margin-top: -35rem;
+}
 
 .world-map-bg-image {
     position: relative;
@@ -468,26 +421,15 @@ section {
     height: 100%;
 }
 
-.world-map-section {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin-bottom: 20rem;
-    margin-top: -35rem;
-}
 
 .world-map {
     margin-right: 10rem;
 }
 
-.world-map img {
-    width: 100%;
-}
-
 .base-camps {
     margin-top: 10rem;
     color: #000;
-    width: 40rem;
+    width: 50rem;
 }
 
 .base-camps h3 {
@@ -512,12 +454,12 @@ cite {
 
 .our-favorites {
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/horse-island.jpg);
+    background-image: url(../img/horse-island.jpg);
     background-size: cover;
     background-position: center;
     height: 70rem;
     width: 100%;
-    margin-bottom: 10rem;
+    margin-bottom: 30rem;
 }
 
 .favorite-heading {
@@ -551,7 +493,7 @@ cite {
 .favorite-info-wrapper {
     display: flex;
     justify-content: center;
-    width: 80rem;
+    width: 40%;
     margin: 0 auto;
     margin-top: 20rem;
 }
@@ -591,7 +533,6 @@ cite {
 
 .paralax-wrapper {
     position: relative;
-    width: 100%;
 }
 
 .mountain-view {
@@ -677,12 +618,12 @@ cite {
 
 footer {
     position: relative;
-    margin-top: 60rem;
+    margin-top: 58rem;
 }
 
 .about {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .about p {
@@ -695,9 +636,14 @@ footer {
 }
 
 .para-1,
+.para-2 {
+    margin-right: 5rem;
+}
+
+.para-1,
 .para-2,
 .para-3 {
-    width: 30%;
+    width: 35rem;
 }
 
 .line {
@@ -713,8 +659,7 @@ footer {
 
 .footer-links {
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: center;
 }
 
 .footer-links img {
@@ -732,16 +677,14 @@ footer {
     padding: 2px;
 }
 
-.footer-links a:link,
-.footer-links a:visited {
+.footer-links a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.7);
 }
 
-.footer-links a:hover,
-.footer-links a:active {
-    color: #96daf0;
-    transition: 0.3s;
+.list-1,
+.list-2 {
+    margin-right: 35rem;
 }
 
 .top-layer {
@@ -796,17 +739,6 @@ footer {
     list-style: none;
     display: inline-block;
     margin-top: 1rem;
-}
-
-.bottom-layer a:link,
-.bottom-layer a:visited {
-    text-decoration: none;
-    color: #96daf0;
-}
-
-.bottom-layer a:hover,
-.bottom-layer a:active {
-    color: #96daf0;
 }
 
 .bottom-layer li img {
@@ -900,19 +832,12 @@ input[type=submit] {
     padding: 1rem;
 }
 
-.legal-links a:link,
-.legal-links a:visited {
+.legal-links a {
     text-decoration: none;
     color: #fff;
     font-size: 1.2rem;
 }
 
-
-.legal-links a:hover,
-.legal-links a:active {
-    color: #96daf0;
-    transition: .3s;
-}
 @keyframes moveInRight {
     0% {
         opacity: 0;
